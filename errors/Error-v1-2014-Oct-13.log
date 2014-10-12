@@ -1,0 +1,10 @@
+[RESTART (version 1) 00:22:51] --------------------------------------------------------------------
+[INFO (version 1) 00:22:51] msf.db (sqlite) took 613 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 00:23:54] --------------------------------------------------------------------
+[INFO (version 1) 00:23:54] msf.db (sqlite) took 619 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
