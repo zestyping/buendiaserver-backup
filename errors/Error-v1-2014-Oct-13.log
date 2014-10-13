@@ -77,3 +77,111 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 22:39:46] --------------------------------------------------------------------
+[INFO (version 1) 22:39:46] msf.db (sqlite) took 661 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 22:43:53] --------------------------------------------------------------------
+[INFO (version 1) 22:43:53] msf.db (sqlite) took 617 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[Jetty problem (version 1) 22:43:53]java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:303)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.projectbuendia.web.JettyServer.start(JettyServer.java:53)
+	at org.projectbuendia.server.Server.main(Server.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+[INFO (version 1) 22:43:53] The server was successfully restarted
+[RESTART (version 1) 22:44:07] --------------------------------------------------------------------
+[INFO (version 1) 22:44:07] msf.db (sqlite) took 615 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 22:46:00] --------------------------------------------------------------------
+[INFO (version 1) 22:46:00] msf.db (sqlite) took 620 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 22:48:58] --------------------------------------------------------------------
+[INFO (version 1) 22:48:58] msf.db (sqlite) took 611 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 23:28:01] --------------------------------------------------------------------
+[INFO (version 1) 23:28:01] msf.db (sqlite) took 700 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 23:29:28] --------------------------------------------------------------------
+[INFO (version 1) 23:29:28] msf.db (sqlite) took 637 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 23:30:38] --------------------------------------------------------------------
+[INFO (version 1) 23:30:38] msf.db (sqlite) took 685 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 23:31:14] --------------------------------------------------------------------
+[INFO (version 1) 23:31:14] msf.db (sqlite) took 637 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 23:32:18] --------------------------------------------------------------------
+[INFO (version 1) 23:32:18] msf.db (sqlite) took 616 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[Lost con (version 1) 23:32:18]java.sql.SQLException: no such column: 'ROWID'
+	at org.sqlite.RS.findColumn(RS.java:121)
+	at org.sqlite.RS.getInt(RS.java:293)
+	at org.projectbuendia.web.api.SharedFunctions.SpecificFlagResponse(SharedFunctions.java:50)
+	at org.projectbuendia.web.api.flags.get.FilterFlags$1.execute(FilterFlags.java:65)
+	at org.projectbuendia.sqlite.SQLiteQuery.execute(SQLiteQuery.java:46)
+	at org.projectbuendia.sqlite.SQLiteConnectionProcessor.run(SQLiteConnectionProcessor.java:73)
+	at java.lang.Thread.run(Thread.java:745)
+[Lost con (version 1) 23:32:18]java.sql.SQLException: no such column: 'ROWID'
+	at org.sqlite.RS.findColumn(RS.java:121)
+	at org.sqlite.RS.getInt(RS.java:293)
+	at org.projectbuendia.web.api.SharedFunctions.SpecificFlagResponse(SharedFunctions.java:50)
+	at org.projectbuendia.web.api.flags.get.FilterFlags$1.execute(FilterFlags.java:65)
+	at org.projectbuendia.sqlite.SQLiteQuery.execute(SQLiteQuery.java:46)
+	at org.projectbuendia.sqlite.SQLiteConnectionProcessor.run(SQLiteConnectionProcessor.java:73)
+	at java.lang.Thread.run(Thread.java:745)
+[Lost con (version 1) 23:32:18]java.sql.SQLException: no such column: 'ROWID'
+	at org.sqlite.RS.findColumn(RS.java:121)
+	at org.sqlite.RS.getInt(RS.java:293)
+	at org.projectbuendia.web.api.SharedFunctions.SpecificFlagResponse(SharedFunctions.java:50)
+	at org.projectbuendia.web.api.flags.get.FilterFlags$1.execute(FilterFlags.java:65)
+	at org.projectbuendia.sqlite.SQLiteQuery.execute(SQLiteQuery.java:46)
+	at org.projectbuendia.sqlite.SQLiteConnectionProcessor.run(SQLiteConnectionProcessor.java:73)
+	at java.lang.Thread.run(Thread.java:745)
+[RESTART (version 1) 23:32:46] --------------------------------------------------------------------
+[INFO (version 1) 23:32:46] msf.db (sqlite) took 628 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 23:34:35] --------------------------------------------------------------------
+[INFO (version 1) 23:34:35] msf.db (sqlite) took 612 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 23:35:27] --------------------------------------------------------------------
+[INFO (version 1) 23:35:27] msf.db (sqlite) took 616 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
