@@ -3,3 +3,77 @@
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 22:13:04] --------------------------------------------------------------------
+[INFO (version 1) 22:13:04] msf.db (sqlite) took 628 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.projectbuendia.web.api.ApiHandler.reportPayload(ApiHandler.java:99)
+	at org.projectbuendia.web.api.ApiHandler.doPost(ApiHandler.java:34)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:688)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:696)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515)
+	at org.projectbuendia.web.api.ServletFilter.doFilter(ServletFilter.java:26)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:450)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:446)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+	at java.lang.Thread.run(Thread.java:745)
+[RESTART (version 1) 22:13:45] --------------------------------------------------------------------
+[INFO (version 1) 22:13:45] msf.db (sqlite) took 614 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[Lost con (version 1) 22:13:45]java.sql.SQLException: no such column: 'age_type'
+	at org.sqlite.RS.findColumn(RS.java:121)
+	at org.sqlite.RS.getString(RS.java:317)
+	at org.projectbuendia.web.api.SharedFunctions.SpecificPatientResponse(SharedFunctions.java:19)
+	at org.projectbuendia.web.api.patients.post.AddNewPatient$2.execute(AddNewPatient.java:102)
+	at org.projectbuendia.sqlite.SQLiteQuery.execute(SQLiteQuery.java:46)
+	at org.projectbuendia.sqlite.SQLiteConnectionProcessor.run(SQLiteConnectionProcessor.java:73)
+	at java.lang.Thread.run(Thread.java:745)
+[RESTART (version 1) 22:14:43] --------------------------------------------------------------------
+[INFO (version 1) 22:14:43] msf.db (sqlite) took 616 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[Lost con (version 1) 22:14:43]java.sql.SQLException: no such column: 'important_information'
+	at org.sqlite.RS.findColumn(RS.java:121)
+	at org.sqlite.RS.getString(RS.java:317)
+	at org.projectbuendia.web.api.SharedFunctions.SpecificPatientResponse(SharedFunctions.java:19)
+	at org.projectbuendia.web.api.patients.post.AddNewPatient$2.execute(AddNewPatient.java:102)
+	at org.projectbuendia.sqlite.SQLiteQuery.execute(SQLiteQuery.java:46)
+	at org.projectbuendia.sqlite.SQLiteConnectionProcessor.run(SQLiteConnectionProcessor.java:73)
+	at java.lang.Thread.run(Thread.java:745)
+[RESTART (version 1) 22:15:13] --------------------------------------------------------------------
+[INFO (version 1) 22:15:13] msf.db (sqlite) took 609 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[Lost con (version 1) 22:15:13]java.sql.SQLException: no such column: 'important_information'
+	at org.sqlite.RS.findColumn(RS.java:121)
+	at org.sqlite.RS.getString(RS.java:317)
+	at org.projectbuendia.web.api.SharedFunctions.SpecificPatientResponse(SharedFunctions.java:19)
+	at org.projectbuendia.web.api.patients.post.AddNewPatient$2.execute(AddNewPatient.java:102)
+	at org.projectbuendia.sqlite.SQLiteQuery.execute(SQLiteQuery.java:46)
+	at org.projectbuendia.sqlite.SQLiteConnectionProcessor.run(SQLiteConnectionProcessor.java:73)
+	at java.lang.Thread.run(Thread.java:745)
+[RESTART (version 1) 22:15:31] --------------------------------------------------------------------
+[INFO (version 1) 22:15:31] msf.db (sqlite) took 614 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[RESTART (version 1) 22:17:34] --------------------------------------------------------------------
+[INFO (version 1) 22:17:34] msf.db (sqlite) took 623 ms to connect
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
