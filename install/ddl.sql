@@ -1,34 +1,28 @@
 CREATE TABLE IF NOT EXISTS flag_sub_types
-(id INTEGER(6) DEFAULT 0 NOT NULL,
+(
 flag_type_id INTEGER(6) DEFAULT 0 NOT NULL,
-name VARCHAR(25) NOT NULL,
-PRIMARY KEY (id),
-UNIQUE (name))
+flag_subtype_id INTEGER(6) DEFAULT 0 NOT NULL,
+name VARCHAR(25) NOT NULL)
 ;
 
 CREATE TABLE IF NOT EXISTS flag_types
-(id INTEGER(6) DEFAULT 0 NOT NULL,
+(flag_type_id INTEGER(6),
 name VARCHAR(25) NOT NULL,
-PRIMARY KEY (id),
-UNIQUE (name))
+PRIMARY KEY (id))
 ;
 
 CREATE TABLE IF NOT EXISTS flags
-(id INTEGER(6) DEFAULT 0 NOT NULL,
+(
 patient_id VARCHAR(60) NOT NULL,
 status VARCHAR(25) DEFAULT "not resolved",
 created_timestamp timestamp default (strftime('%s', 'now')),
 resolved_timestamp timestamp DEFAULT -1,
 flag_type_id INTEGER(6) DEFAULT -1,
-flag_subtype_id INTEGER(6) DEFAULT -1,
-PRIMARY KEY (id),
-UNIQUE (id))
+flag_subtype_id INTEGER(6) DEFAULT -1)
 ;
 
 CREATE TABLE IF NOT EXISTS patients
 (id VARCHAR(60) DEFAULT '0' NOT NULL,
-rfid_ids VARCHAR(329) DEFAULT NULL,
-bluetooth_id VARCHAR(32) DEFAULT NULL,
 created_timestamp timestamp default (strftime('%s', 'now')),
 status VARCHAR(25) DEFAULT NULL,
 given_name VARCHAR(60) DEFAULT NULL,
@@ -38,8 +32,10 @@ assigned_location_tent_id NUMERIC(6) DEFAULT -1,
 assigned_location_bed INTEGER(6) DEFAULT -1,
 age_years INTEGER(4) DEFAULT -1,
 age_months INTEGER(4) DEFAULT -1,
+age_type VARCHAR(25) DEFAULT NULL,
 age_certainty VARCHAR(25) DEFAULT NULL,
 gender VARCHAR(8) DEFAULT NULL,
+important_information VARCHAR(250) DEFAULT NULL,
 pregnancy_start_timestamp timestamp DEFAULT NULL,
 first_showed_symptoms_timestamp timestamp DEFAULT NULL,
 movement VARCHAR(25) DEFAULT NULL,
@@ -50,19 +46,18 @@ PRIMARY KEY (id))
 ;
 
 CREATE TABLE IF NOT EXISTS tents
-(id INTEGER(6) DEFAULT 0 NOT NULL,
+(
 zone_id INTEGER(6) NOT NULL,
+tent_id INTEGER(6) NOT NULL,
 name VARCHAR(25) NOT NULL,
-capacity INTEGER(6) DEFAULT -1,
-PRIMARY KEY (id),
-UNIQUE (name))
+capacity INTEGER(6) DEFAULT -1)
 ;
 
 CREATE TABLE IF NOT EXISTS zones
-(id INTEGER(6) DEFAULT 0 NOT NULL,
+(
+zone_id INTEGER(6) NOT NULL,
 name VARCHAR(25) NOT NULL,
 capacity INTEGER(6) DEFAULT -1,
-PRIMARY KEY (id),
-UNIQUE (name))
+PRIMARY KEY (zone_id))
 ;
 

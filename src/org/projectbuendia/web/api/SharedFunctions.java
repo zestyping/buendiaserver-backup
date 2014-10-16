@@ -24,9 +24,9 @@ public class SharedFunctions {
                 "\"given_name\":" + (result.getString("given_name") != null ? "\""+result.getString("given_name")+"\"" :  "null") +","+
                 "\"family_name\":" + (result.getString("family_name") != null ? "\""+result.getString("family_name")+"\"" :  "null") +","+
                 "\"assigned_location\": { " +
-                "\"zone\":" + "\"tozone-"+result.getString("assigned_location_zone_id")+"\","+
-                "\"tent\":" + "\"tozone-"+result.getString("assigned_location_tent_id")+"\","+
-                "\"bed\":" + "\"tozone-"+result.getString("assigned_location_bed")+"\"" +
+                "\"zone\":" + result.getInt("assigned_location_zone_id")+","+
+                "\"tent\":" + result.getInt("assigned_location_tent_id")+","+
+                "\"bed\":" + result.getInt("assigned_location_bed") +
                 "},"+
                 "\"age\": { " +
                 "\"years\":" + result.getInt("age_years")+","+
@@ -43,6 +43,13 @@ public class SharedFunctions {
                 "\"eating\":" +(result.getString("eating") != null ? "\""+result.getString("eating")+"\"" :  "null") +","+
                 "\"origin_location\":" +(result.getString("origin_location") != null ? "\""+result.getString("origin_location")+"\"" :  "null") +","+
                 "\"next_of_kin\":" + (result.getString("next_of_kin") != null ? "\""+result.getString("next_of_kin")+"\"" :  "null") +""+
+                "}";
+    }
+    public static String SpecificFlagResponse(ResultSet result) throws SQLException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return "{" +
+                "\"id\":" + result.getRow() +","+
+                "\"created_timestamp_utc\":" + result.getLong("created_timestamp")+","+
                 "}";
     }
 
